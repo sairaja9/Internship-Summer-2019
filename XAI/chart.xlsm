@@ -18,11 +18,11 @@ Sub CreateChart()
     
     Dim i As Integer
     For i = 2 To 7
-        Worksheets(1).ChartObjects(1).Activate
-        ActiveChart.PlotArea.Select
-        ActiveChart.ChartArea.Copy
-        ChartLocation.Select
-        ActiveSheet.Paste
+        'Worksheets(1).ChartObjects(1).Activate
+        'ActiveChart.PlotArea.Select
+        'ActiveChart.ChartArea.Copy
+        'ChartLocation.Select
+        'ActiveSheet.Paste
         
         Set NewChart = Worksheets(1).ChartObjects(1).Duplicate
         NewChart.Select
