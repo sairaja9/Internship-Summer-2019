@@ -9,23 +9,22 @@ Sub CreateChart()
     ChartLocation = Range("M12")
     Dim i as Integer
     For i = 2 To 7
-    ActiveChart.PlotArea.Select
-    ActiveChart.ChartArea.Copy
-    ChartLocation.Select
-    ActiveSheet.Paste
-    ActiveChart.ChartArea.Select
-    ActiveChart.PlotArea.Select
-    Application.CutCopyMode = False
-    Application.CutCopyMode = False
-    Application.CutCopyMode = False
-    Application.CutCopyMode = False
-    ActiveChart.FullSeriesCollection(1).Values = CombatUnits
-    ActiveChart.FullSeriesCollection(2).Values = CombatUnits.Offset(0,-2)
-    ActiveChart.FullSeriesCollection(3).Values = CombatUnits.Offset(0,-2)
-    ActiveChart.FullSeriesCollection(4).Values = Pylons
-    CombatUnits.Offset(-1,4)
-    Pylons.Offset(-1,0)
-    ChartLocation.Offset(15,0)
+        ActiveChart.PlotArea.Select
+        ActiveChart.ChartArea.Copy
+        ChartLocation.Select
+        ActiveSheet.Paste
+        ActiveChart.ChartArea.Select
+        ActiveChart.PlotArea.Select
+        Application.CutCopyMode = False
+        Application.CutCopyMode = False
+        Application.CutCopyMode = False
+        Application.CutCopyMode = False
+        ActiveChart.FullSeriesCollection(1).Values = CombatUnits
+        ActiveChart.FullSeriesCollection(2).Values = CombatUnits.Offset(0,-2)
+        ActiveChart.FullSeriesCollection(3).Values = CombatUnits.Offset(0,-2)
+        ActiveChart.FullSeriesCollection(4).Values = Pylons
+        CombatUnits.Offset(-1,4)
+        Pylons.Offset(-1,0)
+        ChartLocation.Offset(15,0)
     Next i
 End Sub
-
