@@ -10,22 +10,31 @@ Sub CreateChart()
     Dim Pylons As Range
     Set Pylons = Range("E2")
     
-    Dim ChartLocation As Range
-    Set ChartLocation = Range("M12")
+    Dim Counter As Integer
+    Dim Max As Integer
     
-    'Dim ChartNumber As Integer
-    'Set ChartNumber = 1
+    Dim TitleLocation As Range
+    Set TitleLocation = Range("A2")
     
     Dim i As Integer
     For i = 2 To 7
-        'Worksheets(1).ChartObjects(1).Activate
-        'ActiveChart.PlotArea.Select
-        'ActiveChart.ChartArea.Copy
-        'ActiveSheet.Paste
         
         Set NewChart = Worksheets(1).ChartObjects(1).Duplicate
-        'Set NewChart = NewChart.Offset(15,0)
+        
+        Counter = 0
+        Max = i - 1
+        While Counter < Max
+            NewChart.IncrementTop 215#
+            Counter = Counter + 1
+        Wend
+        
         NewChart.Select
+        
+        With ActiveChart
+            .HasTitle = True
+            .ChartTitle.Text = TitleLocation.Value
+        End With
+        
         ActiveChart.ChartArea.Select
         ActiveChart.PlotArea.Select
         Application.CutCopyMode = False
@@ -39,8 +48,7 @@ Sub CreateChart()
         
         Set CombatUnits = CombatUnits.Offset(1, 4)
         Set Pylons = Pylons.Offset(1, 0)
-        Set ChartLocation = ChartLocation.Offset(15, 0)
-        'Set ChartNumber = ChartNumber + 1
+        Set TitleLocation = TitleLocation.Offset(1, 0)
         
     Next i
     
