@@ -21,10 +21,10 @@ Sub CreateChart()
         'Worksheets(1).ChartObjects(1).Activate
         'ActiveChart.PlotArea.Select
         'ActiveChart.ChartArea.Copy
-        'ChartLocation.Select
         'ActiveSheet.Paste
         
         Set NewChart = Worksheets(1).ChartObjects(1).Duplicate
+        'Set NewChart = NewChart.Offset(15,0)
         NewChart.Select
         ActiveChart.ChartArea.Select
         ActiveChart.PlotArea.Select
@@ -45,15 +45,3 @@ Sub CreateChart()
     Next i
     
 End Sub
-
-
-        'Dim Series1, Series2, Series3, Series4 As Object
-        'Set Series1 = ActiveChart.FullSeriesCollection(1)
-        'Set Series2 = ActiveChart.FullSeriesCollection(2)
-        'Set Series3 = ActiveChart.FullSeriesCollection(3)
-        'Set Series4 = ActiveChart.FullSeriesCollection(4)
-        
-        'Series1.Values = CombatUnits.Select
-        'Series2.Values = CombatUnits.Offset(0, -2).Select
-        'Series3.Values = CombatUnits.Offset(0, -2).Select
-        'Series4.Values = Pylons.Select
