@@ -4,27 +4,56 @@ Sub CreateChart()
 '
 ' Keyboard Shortcut: Ctrl+y
 '
-    CombatUnits = Range("J2:K2")
-    Pylons = Range("E2")
-    ChartLocation = Range("M12")
-    Dim i as Integer
+    Dim CombatUnits As Range
+    Set CombatUnits = Range("J2:K2")
+    
+    Dim Pylons As Range
+    Set Pylons = Range("E2")
+    
+    Dim ChartLocation As Range
+    Set ChartLocation = Range("M12")
+    
+    'Dim ChartNumber As Integer
+    'Set ChartNumber = 1
+    
+    Dim i As Integer
     For i = 2 To 7
+        Worksheets(1).ChartObjects(1).Activate
         ActiveChart.PlotArea.Select
         ActiveChart.ChartArea.Copy
         ChartLocation.Select
         ActiveSheet.Paste
+        
+        Set NewChart = Worksheets(1).ChartObjects(1).Duplicate
+        NewChart.Select
         ActiveChart.ChartArea.Select
         ActiveChart.PlotArea.Select
         Application.CutCopyMode = False
-        Application.CutCopyMode = False
-        Application.CutCopyMode = False
-        Application.CutCopyMode = False
+        
         ActiveChart.FullSeriesCollection(1).Values = CombatUnits
-        ActiveChart.FullSeriesCollection(2).Values = CombatUnits.Offset(0,-2)
-        ActiveChart.FullSeriesCollection(3).Values = CombatUnits.Offset(0,-2)
+        Set CombatUnits = CombatUnits.Offset(0, -2)
+        ActiveChart.FullSeriesCollection(2).Values = CombatUnits
+        Set CombatUnits = CombatUnits.Offset(0, -2)
+        ActiveChart.FullSeriesCollection(3).Values = CombatUnits
         ActiveChart.FullSeriesCollection(4).Values = Pylons
-        CombatUnits.Offset(-1,4)
-        Pylons.Offset(-1,0)
-        ChartLocation.Offset(15,0)
+        
+        Set CombatUnits = CombatUnits.Offset(1, 4)
+        Set Pylons = Pylons.Offset(1, 0)
+        Set ChartLocation = ChartLocation.Offset(15, 0)
+        'Set ChartNumber = ChartNumber + 1
+        
     Next i
+    
 End Sub
+
+
+        'Dim Series1, Series2, Series3, Series4 As Object
+        'Set Series1 = ActiveChart.FullSeriesCollection(1)
+        'Set Series2 = ActiveChart.FullSeriesCollection(2)
+        'Set Series3 = ActiveChart.FullSeriesCollection(3)
+        'Set Series4 = ActiveChart.FullSeriesCollection(4)
+        
+        'Series1.Values = CombatUnits.Select
+        'Series2.Values = CombatUnits.Offset(0, -2).Select
+        'Series3.Values = CombatUnits.Offset(0, -2).Select
+        'Series4.Values = Pylons.Select
