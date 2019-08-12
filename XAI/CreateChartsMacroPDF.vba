@@ -2,7 +2,6 @@ Sub CreateChartPDF()
 '
 ' CreateChart Macro
 '
-' Keyboard Shortcut: Ctrl+l
 '
     Dim strName As String
     Dim strPath As String
@@ -54,15 +53,10 @@ Sub CreateChartPDF()
         ActiveChart.FullSeriesCollection(3).Values = CombatUnits
         ActiveChart.FullSeriesCollection(4).Values = Pylons
         
-        strPath = "C:\Users\saira\OneDrive\DPgraphs\PDFs\"
+        strPath = "C:\Users\saira\Desktop\DPgraphs\PDFs\"
         strName = TitleLocation.Value
         strFile = strName & ".pdf"
         strPathFile = strPath & strFile
-
-        'myFile = Application.GetSaveAsFilename _
-            '(InitialFileName:=strPathFile, _
-                'FileFilter:="PDF Files (*.pdf), *.pdf", _
-                'Title:="Select Folder and FileName to save")
 
         ActiveWindow.SelectedSheets.PrintOut Copies:=1, PrintToFile:= True, Collate:=True, PrToFileName:=strPathFile, _
         IgnorePrintAreas:=False

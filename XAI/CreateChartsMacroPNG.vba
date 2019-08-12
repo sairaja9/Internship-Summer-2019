@@ -2,7 +2,6 @@ Sub CreateChartPNG()
 '
 ' CreateChart Macro
 '
-' Keyboard Shortcut: Ctrl+y
 '
     Dim CombatUnits As Range
     Set CombatUnits = Range("J2:K2")
@@ -49,7 +48,7 @@ Sub CreateChartPNG()
         ActiveChart.FullSeriesCollection(4).Values = Pylons
         
         Title = TitleLocation.Value
-        ActiveChart.Export "C:\Users\saira\OneDrive\DPgraphs\PNGs\" + Title + ".png"
+        ActiveChart.Export "C:\Users\saira\Desktop\DPgraphs\PNGs\" + Title + ".png"
         
         Set CombatUnits = CombatUnits.Offset(1, 4)
         Set Pylons = Pylons.Offset(1, 0)
