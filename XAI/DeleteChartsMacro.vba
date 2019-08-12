@@ -1,5 +1,6 @@
 Sub DeleteCharts()
 
+Worksheets("Sheet1").Activate
 Set CurrentSheet = ActiveSheet
 
 For Each Worksheet In ActiveWorkbook.Worksheets
@@ -8,9 +9,7 @@ For Each Worksheet In ActiveWorkbook.Worksheets
         If ActiveChart.HasTitle = True Then
             ActiveChart.Parent.Delete
         End If
-    Next
-Next
-
-'Worksheets("Sheet1").Activate
+    Next ChartObject
+Next Worksheet
 
 End Sub

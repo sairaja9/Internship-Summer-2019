@@ -1,4 +1,4 @@
-Sub CreateChart()
+Sub CreateChartPNG()
 '
 ' CreateChart Macro
 '
@@ -49,7 +49,7 @@ Sub CreateChart()
         ActiveChart.FullSeriesCollection(4).Values = Pylons
         
         Title = TitleLocation.Value
-        ActiveChart.Export "C:\Users\saira\OneDrive\DPgraphs\" + Title + ".png"
+        ActiveChart.Export "C:\Users\saira\OneDrive\DPgraphs\PNGs\" + Title + ".png"
         
         Set CombatUnits = CombatUnits.Offset(1, 4)
         Set Pylons = Pylons.Offset(1, 0)
