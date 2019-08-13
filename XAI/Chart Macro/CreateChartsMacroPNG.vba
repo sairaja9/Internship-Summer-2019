@@ -4,10 +4,10 @@ Sub CreateChartPNG()
 '
 '
     Dim CombatUnits As Range
-    Set CombatUnits = Range("J2:K2")
+    Set CombatUnits = Range("G2:H2")
     
     Dim Pylons As Range
-    Set Pylons = Range("E2")
+    Set Pylons = Range("B2")
     
     Dim Counter As Integer
     Dim Max As Integer
@@ -18,7 +18,7 @@ Sub CreateChartPNG()
     Dim Title As String
     
     Dim i As Integer
-    For i = 2 To 7
+    For i = 2 To 614
         
         Set NewChart = Worksheets(1).ChartObjects(1).Duplicate
         
