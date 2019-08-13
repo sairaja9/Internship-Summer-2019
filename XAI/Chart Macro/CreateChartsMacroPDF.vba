@@ -24,7 +24,7 @@ Sub CreateChartPDF()
     Dim Title As String
     
     Dim i As Integer
-    For i = 2 To 614
+    For i = 2 To 20
         
         Set NewChart = Worksheets(1).ChartObjects(1).Duplicate
         
