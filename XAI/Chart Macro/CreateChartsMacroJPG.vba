@@ -33,7 +33,7 @@ Sub CreateChartJPG()
         
         With ActiveChart
             .HasTitle = True
-            '.ChartTitle.Text = TitleLocation.Value
+            .ChartTitle.Text = " "
         End With
         
         ActiveChart.ChartArea.Select
