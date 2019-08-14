@@ -16,9 +16,14 @@ Sub CreateChartJPG()
     Set TitleLocation = Range("A2")
     
     Dim Title As String
+
+    Dim LastRow as Long
+    With ActiveSheet:
+        LastRow = .Range("A1").SpecialCells(xlCellTypeLastCell).LastRow
+    End With
     
     Dim i As Integer
-    For i = 2 To 20
+    For i = 2 To LastRow
         
         Set NewChart = Worksheets(1).ChartObjects(1).Duplicate
         
