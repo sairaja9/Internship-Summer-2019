@@ -1,0 +1,23 @@
+Name	Pylons	BOT Marines	TOP Marines	BOT Banelings	TOP Banelings	BOT Immortals	TOP Immortals
+dp1_level1_state_enemy	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+dp1_level1_state	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+dp1_level1_action_max_0_0	0.0	0.0	0.0	2.0	0.0	0.0	0.0
+dp1_level1_action_max_1(best)_1(best)	0.0	0.0	0.0	1.0	0.0	0.0	0.0
+dp1_level1_action_min_10_10	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+dp1_level1_action_min_11_11	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+dp1_level1_action_min_12(best)_12(best)	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+dp2_level2_state_120(best)_120(best)_enemy	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+dp2_level2_state_120(best)_120(best)	0.0	0.0	0.0	1.0	0.0	0.0	0.0
+dp2_level2_action_max_1200(best)_1200(best)	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+dp2_level2_action_min_12000_12000	0.0	0.0	0.0	1.0	0.0	0.0	0.0
+dp2_level2_action_min_12001_12001	0.0	0.0	0.0	1.0	0.0	0.0	0.0
+dp2_level2_action_min_12002_12002	0.0	0.0	0.0	1.0	0.0	0.0	0.0
+dp2_level2_action_min_12003(best)_12003(best)	0.0	0.0	0.0	1.0	0.0	0.0	0.0
+dp2_level2_state_120030(best)_120030(best)_enemy	0.0	2.0	0.0	1.0	0.0	0.0	0.0
+dp2_level2_state_120030(best)_120030(best)	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+dp2_level2_action_max_1201_1201	0.0	0.0	1.0	1.0	0.0	0.0	0.0
+dp2_level2_action_max_1202_1202	0.0	2.0	0.0	1.0	0.0	0.0	0.0
+dp2_level2_action_max_1203_1203	0.0	0.0	0.0	1.0	0.0	0.0	0.0
+dp1_level1_action_min_13_13	0.0	0.0	0.0	0.0	0.0	0.0	0.0
+dp1_level1_action_max_2_2	0.0	1.0	0.0	1.0	0.0	0.0	0.0
+dp1_level1_action_max_3_3	0.0	0.0	0.0	0.0	2.0	0.0	0.0
