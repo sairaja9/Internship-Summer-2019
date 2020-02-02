@@ -1,0 +1,23 @@
+Name	Pylons	BOT Marines	TOP Marines	BOT Banelings	TOP Banelings	BOT Immortals	TOP Immortals
+dp22_level1_state_enemy	0.0	12.0	9.0	11.0	2.0	0.0	0.0
+dp22_level1_state	0.0	3.0	6.0	16.0	5.0	0.0	0.0
+dp22_level1_action_max_0(best)_0(best)	0.0	3.0	6.0	17.0	5.0	0.0	0.0
+dp22_level1_action_min_00_00	0.0	3.0	6.0	16.0	5.0	0.0	0.0
+dp22_level1_action_min_01_01	0.0	3.0	6.0	16.0	5.0	0.0	0.0
+dp22_level1_action_min_02_02	0.0	3.0	6.0	16.0	5.0	0.0	0.0
+dp22_level1_action_min_03(best)_03(best)	0.0	3.0	6.0	16.0	5.0	0.0	0.0
+dp23_level2_state_030(best)_030(best)_enemy	0.0	12.0	10.0	11.0	4.0	0.0	0.0
+dp23_level2_state_030(best)_030(best)	0.0	3.0	6.0	17.0	5.0	0.0	0.0
+dp23_level2_action_max_0300(best)_0300(best)	0.0	3.0	6.0	18.0	5.0	0.0	0.0
+dp23_level2_action_min_03000_03000	0.0	3.0	6.0	17.0	5.0	0.0	0.0
+dp23_level2_action_min_03001(best)_03001(best)	0.0	3.0	6.0	17.0	5.0	0.0	0.0
+dp23_level2_state_030010(best)_030010(best)_enemy	0.0	12.0	10.0	12.0	4.0	0.0	0.0
+dp23_level2_state_030010(best)_030010(best)	0.0	3.0	6.0	18.0	5.0	0.0	0.0
+dp23_level2_action_min_03002_03002	0.0	3.0	6.0	17.0	5.0	0.0	0.0
+dp23_level2_action_min_03003_03003	0.0	3.0	6.0	17.0	5.0	0.0	0.0
+dp23_level2_action_max_0301_0301	0.0	3.0	6.0	17.0	5.0	0.0	0.0
+dp23_level2_action_max_0302_0302	0.0	3.0	6.0	17.0	5.0	0.0	0.0
+dp23_level2_action_max_0303_0303	0.0	4.0	6.0	17.0	5.0	0.0	0.0
+dp22_level1_action_max_1_1	0.0	3.0	7.0	16.0	5.0	0.0	0.0
+dp22_level1_action_max_2_2	0.0	4.0	6.0	16.0	5.0	0.0	0.0
+dp22_level1_action_max_3_3	0.0	3.0	6.0	16.0	5.0	0.0	0.0
