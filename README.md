@@ -6,4 +6,4 @@ In Dr. Burnett's Lab (the XAI project), I helped conduct a qualitative study tha
 
 In Dr. Sarma’s lab, I worked on GenderMag, an inclusive project that aims to improve the user experience (UX) of software across all genders and personalities. By implementing fixes and features, I enhanced a web-based extension tool used to evaluate the UX and inclusivity of websites (https://github.com/sairaja9/GenderMagRecordersAssistant).
 
-<img src="https://github.com/sairaja9/Internship-Summer-2019/blob/master/Poster%20File/SmallPoster.pdf">
+<img src="https://github.com/sairaja9/Internship-Summer-2019/blob/master/Poster%20File/XAIposter.png">
